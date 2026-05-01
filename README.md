@@ -1,5 +1,7 @@
 # AI Status Portal
 
+**Live Portal:** [https://ai-status-portal.web.app/](https://ai-status-portal.web.app/)
+
 A single, unified dashboard to view the real-time operational status of the most popular AI APIs and platforms.
 
 ## Features
