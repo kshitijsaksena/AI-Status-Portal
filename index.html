@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Status Portal</title>
+    <meta name="description" content="Live uptime status for major AI APIs including OpenAI, Claude, and Gemini.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>AI Status Portal</h1>
+            <p>Real-time uptime monitoring for top AI models</p>
+        </header>
+
+        <div class="grid" id="status-grid">
+            <!-- OpenAI Card -->
+            <div class="card" id="card-openai">
+                <div class="card-header">
+                    <h2>OpenAI</h2>
+                    <span class="status-indicator loading"></span>
+                </div>
+                <div class="card-body">
+                    <p class="status-text">Fetching status...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://status.openai.com/" target="_blank" rel="noopener noreferrer">View details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Claude Card -->
+            <div class="card" id="card-claude">
+                <div class="card-header">
+                    <h2>Claude</h2>
+                    <span class="status-indicator loading"></span>
+                </div>
+                <div class="card-body">
+                    <p class="status-text">Fetching status...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://status.claude.com/" target="_blank" rel="noopener noreferrer">View details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Gemini Card (Static/Link) -->
+            <div class="card" id="card-gemini">
+                <div class="card-header">
+                    <h2>Gemini</h2>
+                    <span class="status-indicator none"></span>
+                </div>
+                <div class="card-body">
+                    <p class="status-text">Google AI Studio</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://aistudio.google.com/status" target="_blank" rel="noopener noreferrer">View Live Status &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Deepseek Card -->
+            <div class="card" id="card-deepseek">
+                <div class="card-header">
+                    <h2>Deepseek</h2>
+                    <span class="status-indicator loading"></span>
+                </div>
+                <div class="card-body">
+                    <p class="status-text">Fetching status...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://status.deepseek.com/" target="_blank" rel="noopener noreferrer">View details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Grok Card (Static/Link) -->
+            <div class="card" id="card-grok">
+                <div class="card-header">
+                    <h2>Grok</h2>
+                    <span class="status-indicator none"></span>
+                </div>
+                <div class="card-body">
+                    <p class="status-text">xAI Status Page</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://status.x.ai/grok-com" target="_blank" rel="noopener noreferrer">View Live Status &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Mistral Card (Static/Link) -->
+            <div class="card" id="card-mistral">
+                <div class="card-header">
+                    <h2>Mistral</h2>
+                    <span class="status-indicator none"></span>
+                </div>
+                <div class="card-body">
+                    <p class="status-text">Mistral AI Status</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://status.mistral.ai/" target="_blank" rel="noopener noreferrer">View Live Status &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
