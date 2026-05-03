@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const endpoints = {
         openai: 'https://status.openai.com/api/v2/status.json',
         claude: 'https://status.claude.com/api/v2/status.json',
-        deepseek: 'https://status.deepseek.com/api/v2/status.json'
+        deepseek: 'https://status.deepseek.com/api/v2/status.json',
+        github: 'https://www.githubstatus.com/api/v2/status.json',
+        windsurf: 'https://status.windsurf.com/api/v2/status.json',
+        cursor: 'https://status.cursor.com/api/v2/status.json'
     };
 
     /**
@@ -70,4 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchStatus('openai', endpoints.openai);
     fetchStatus('claude', endpoints.claude);
     fetchStatus('deepseek', endpoints.deepseek);
+    fetchStatus('github', endpoints.github);
+    fetchStatus('windsurf', endpoints.windsurf);
+    fetchStatus('cursor', endpoints.cursor);
 });
